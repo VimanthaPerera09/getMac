@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Built'
-        sh 'jenkins/build.sh'
+        sh 'python getMac.py'
       }
     }
 
