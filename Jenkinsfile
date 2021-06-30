@@ -11,7 +11,6 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing'
-        bat 'jenkins/test-all.bat'
       }
     }
 
