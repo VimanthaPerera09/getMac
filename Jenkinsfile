@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'Built'
         bat(script: 'python getMac.py', returnStatus: true, returnStdout: true)
+        input(message: 'Do you wish to build', ok: 'Yes')
       }
     }
 
