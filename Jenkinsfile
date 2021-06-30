@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Built'
-        sh 'python getMac.py'
+        bat(script: 'python getMac.py', returnStatus: true, returnStdout: true)
       }
     }
 
